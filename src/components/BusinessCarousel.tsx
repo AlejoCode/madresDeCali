@@ -128,16 +128,14 @@ const BusinessCarousel = () => {
   }
 
   return (
-    <section id="negocios" className="py-16 bg-gray-50">
+    <section id="negocios" className="py-8 bg-gray-50">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-8">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 font-serif">Negocios Locales Destacados</h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Estos emprendimientos caleños tienen productos especiales para celebrar a mamá.
-            Apóyalos y regala algo único, hecho con amor en nuestra ciudad.
+        <div className="text-center">
+        <p className="text-xl md:text-xl mb-8 text-gray-700 leading-relaxed">
+        Estos emprendimientos caleños tienen productos especiales para celebrar a mamá. Apóyalos y regala algo único, hecho con amor en nuestra ciudad.
           </p>
+
         </div>
-        
         {/* Estado de carga */}
         {loading && (
           <div className="text-center py-4">

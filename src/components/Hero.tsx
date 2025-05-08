@@ -1,10 +1,9 @@
-
 import React from 'react';
 import { Heart } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section id="inicio" className="relative py-16 md:py-24 overflow-hidden">
+    <section id="inicio" className="relative py-4 md:py-12 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-cali opacity-20 z-0"></div>
       <div className="container mx-auto px-4 z-10 relative">
         <div className="max-w-4xl mx-auto text-center animate-fade-in">
@@ -14,6 +13,7 @@ const Hero = () => {
           <h1 className="text-4xl md:text-6xl font-bold mb-6 font-serif text-gray-800">
             Celebremos a Mamá <span className="text-cali-pink-dark">con el corazón de Cali</span>
           </h1>
+          
           <p className="text-xl md:text-2xl mb-8 text-gray-700 leading-relaxed">
             Una iniciativa de la Alcaldía de Santiago de Cali para apoyar a nuestros 
             emprendedores locales en esta fecha tan especial.
@@ -25,6 +25,19 @@ const Hero = () => {
             >
               Descubrir Negocios
             </a>
+          </div>
+        </div>
+        
+        {/* Video Section */}
+        <div className="mt-12 max-w-5xl mx-auto text-center">
+          <div className="aspect-video rounded-lg overflow-hidden shadow-lg">
+            <iframe
+              className="w-full h-full"
+              src="https://www.youtube.com/embed/5yUx_2vJ0jE?autoplay=1&mute=1"
+              title="Alcaldía de Santiago de Cali"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
           </div>
         </div>
       </div>

@@ -11,6 +11,7 @@ interface BusinessCardProps {
   instagram?: string;
   facebook?: string;
   telefono?: string;
+  videoUrl?: string;
 }
 
 const BusinessCard = ({ 
@@ -20,7 +21,8 @@ const BusinessCard = ({
   imageUrls, 
   instagram, 
   facebook, 
-  telefono
+  telefono,
+  videoUrl
 }: BusinessCardProps) => {
   const [currentImg, setCurrentImg] = useState(0);
   const hasMultipleImages = imageUrls && imageUrls.length > 1;
@@ -49,17 +51,49 @@ const BusinessCard = ({
     <Card className="h-full flex flex-col overflow-hidden border-2 border-gray-100 hover:border-cali-pink-light transition-all duration-300 shadow-md hover:shadow-lg">
       <div className="relative pt-[56.25%] overflow-hidden bg-gray-100">
         {imageUrls && imageUrls.length > 0 && (
-          <img 
-            src={imageUrls[0]} 
-            alt={name} 
-            className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 hover:scale-105"
-            onError={(e) => {
-              e.currentTarget.onerror = null;
-              e.currentTarget.src = "https://placeholder.pics/svg/300x200";
-            }}
-          />
+          <>
+            <img 
+              src={imageUrls[currentImg]} 
+              alt={name} 
+              className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+              onError={(e) => {
+                e.currentTarget.onerror = null;
+                e.currentTarget.src = "https://placeholder.pics/svg/300x200";
+              }}
+            />
+            {hasMultipleImages && (
+              <>
+                <button
+                  onClick={handlePrev}
+                  className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 text-white p-1 rounded-full hover:bg-black/70 transition-colors"
+                >
+                  <ChevronLeft className="w-6 h-6" />
+                </button>
+                <button
+                  onClick={handleNext}
+                  className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 text-white p-1 rounded-full hover:bg-black/70 transition-colors"
+                >
+                  <ChevronRight className="w-6 h-6" />
+                </button>
+              </>
+            )}
+          </>
         )}
       </div>
+      {videoUrl && (
+        <div className="w-full mt-2 rounded-lg overflow-hidden aspect-video bg-black">
+          <video
+            src={videoUrl}
+            controls
+            preload="metadata"
+            className="w-full h-full object-cover"
+            style={{ background: '#000' }}
+            poster={imageUrls && imageUrls[0] ? imageUrls[0] : undefined}
+          >
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      )}
       <CardHeader className="pb-2">
         {category && <div className="text-xs text-cali-pink-dark font-medium mb-1">{category}</div>}
         <CardTitle className="text-xl font-serif">{name}</CardTitle>
