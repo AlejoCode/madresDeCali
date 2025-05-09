@@ -27,19 +27,7 @@ const Hero = () => {
             </a>
           </div>
         </div>
-        
-        {/* Video Section */}
-        <div className="mt-12 max-w-5xl mx-auto text-center">
-          <div className="aspect-video rounded-lg overflow-hidden shadow-lg">
-            <iframe
-              className="w-full h-full"
-              src="https://www.youtube.com/embed/5yUx_2vJ0jE?autoplay=1&mute=1"
-              title="Alcaldía de Santiago de Cali"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
-          </div>
-        </div>
+      
       </div>
     </section>
   );
