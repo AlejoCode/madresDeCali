@@ -11,7 +11,7 @@ const Hero = () => {
             <Heart className="h-10 w-10 text-cali-pink-dark mx-auto" />
           </div>
           <h1 className="text-4xl md:text-6xl font-bold mb-6 font-serif text-gray-800">
-            Celebremos a Mamá <span className="text-cali-pink-dark">con el corazón de Cali</span>
+            Celebremos a mamá con <span className="text-cali-pink-dark">amor, respeto y un detalle muy nuestro</span>
           </h1>
           
           <p className="text-xl md:text-2xl mb-8 text-gray-700 leading-relaxed">
