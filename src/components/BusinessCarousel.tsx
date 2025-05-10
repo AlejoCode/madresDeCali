@@ -131,8 +131,8 @@ const BusinessCarousel = () => {
     <section id="negocios" className="py-8 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center">
-        <p className="text-xl md:text-xl mb-8 text-gray-700 leading-relaxed">
-        Estos emprendimientos caleños tienen productos especiales para celebrar a mamá. Apóyalos y regala algo único, hecho con amor en nuestra ciudad.
+        <p className="text-xl md:text-xl mb-8 text-gray-700 leading-relaxed ">
+        Les presentamos los emprendimientos locales de madres caleñas, una iniciativa de la Alcaldía de Santiago de Cali, que busca apoyar lo nuestro en una fecha tan especial.
           </p>
 
         </div>

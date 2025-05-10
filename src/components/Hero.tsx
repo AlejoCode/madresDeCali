@@ -7,17 +7,12 @@ const Hero = () => {
       <div className="absolute inset-0 bg-gradient-cali opacity-20 z-0"></div>
       <div className="container mx-auto px-4 z-10 relative">
         <div className="max-w-4xl mx-auto text-center animate-fade-in">
-          <div className="inline-block mb-4">
-            <Heart className="h-10 w-10 text-cali-pink-dark mx-auto" />
-          </div>
+          
           <h1 className="text-4xl md:text-6xl font-bold mb-6 font-serif text-gray-800">
             Celebremos a mamá con <span className="text-cali-pink-dark">amor, respeto y un detalle muy nuestro</span>
           </h1>
           
-          <p className="text-xl md:text-2xl mb-8 text-gray-700 leading-relaxed">
-            Una iniciativa de la Alcaldía de Santiago de Cali para apoyar a nuestros 
-            emprendedores locales en esta fecha tan especial.
-          </p>
+        
           <div className="flex flex-col md:flex-row justify-center gap-4">
             <a 
               href="#negocios" 
@@ -27,7 +22,19 @@ const Hero = () => {
             </a>
           </div>
         </div>
-      
+        
+        {/* Video Section */}
+        <div className="mt-12 max-w-5xl mx-auto text-center">
+          <div className="aspect-video rounded-lg overflow-hidden shadow-lg">
+            <iframe
+              className="w-full h-full"
+              src="https://www.youtube.com/embed/XwaLfBkiZX4?autoplay=1&mute=1&loop=1&playlist=XwaLfBkiZX4&controls=0&rel=0&showinfo=0&modestbranding=1"
+              title="Alcaldía de Santiago de Cali"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
+        </div>
       </div>
     </section>
   );

@@ -7,9 +7,7 @@ const CallToAction = () => {
     <section className="py-16 md:py-20 bg-gradient-cali">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto bg-white p-8 md:p-12 rounded-2xl shadow-lg text-center">
-          <div className="inline-flex items-center justify-center p-3 bg-cali-pink-light rounded-full mb-6">
-            <Heart className="h-7 w-7 text-cali-pink-dark" />
-          </div>
+
           <h2 className="text-3xl md:text-4xl font-bold mb-4 font-serif text-gray-800">
             Juntos apoyamos lo nuestro
           </h2>
@@ -25,6 +23,7 @@ const CallToAction = () => {
             >
               Descubrir Negocios
             </a>
+            {/* Video goes here  */}
           </div>
         </div>
       </div>

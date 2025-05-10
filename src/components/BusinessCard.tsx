@@ -11,7 +11,6 @@ interface BusinessCardProps {
   instagram?: string;
   facebook?: string;
   telefono?: string;
-  videoUrl?: string;
 }
 
 const BusinessCard = ({ 
@@ -22,7 +21,6 @@ const BusinessCard = ({
   instagram, 
   facebook, 
   telefono,
-  videoUrl
 }: BusinessCardProps) => {
   const [currentImg, setCurrentImg] = useState(0);
   const hasMultipleImages = imageUrls && imageUrls.length > 1;
@@ -80,20 +78,6 @@ const BusinessCard = ({
           </>
         )}
       </div>
-      {videoUrl && (
-        <div className="w-full mt-2 rounded-lg overflow-hidden aspect-video bg-black">
-          <video
-            src={videoUrl}
-            controls
-            preload="metadata"
-            className="w-full h-full object-cover"
-            style={{ background: '#000' }}
-            poster={imageUrls && imageUrls[0] ? imageUrls[0] : undefined}
-          >
-            Your browser does not support the video tag.
-          </video>
-        </div>
-      )}
       <CardHeader className="pb-2">
         {category && <div className="text-xs text-cali-pink-dark font-medium mb-1">{category}</div>}
         <CardTitle className="text-xl font-serif">{name}</CardTitle>
