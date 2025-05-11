@@ -4,12 +4,12 @@ import { Heart } from 'lucide-react';
 const Hero = () => {
   return (
     <section id="inicio" className="relative py-4 md:py-12 overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-cali opacity-20 z-0"></div>
+      <div className="absolute inset-0 bg-gradient-cali opacity-100 z-0"></div>
       <div className="container mx-auto px-4 z-10 relative">
         <div className="max-w-4xl mx-auto text-center animate-fade-in">
           
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 font-serif text-gray-800">
-            Celebremos a mamá con <span className="text-cali-pink-dark">amor, respeto y un detalle muy nuestro</span>
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 text-cali-pink-strong-dark">
+            Celebremos a mamá <span className="text-white">con amor, respeto y un detalle muy nuestro</span>
           </h1>
           
         

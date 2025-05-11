@@ -80,7 +80,7 @@ const BusinessCard = ({
       </div>
       <CardHeader className="pb-2">
         {category && <div className="text-xs text-cali-pink-dark font-medium mb-1">{category}</div>}
-        <CardTitle className="text-xl font-serif">{name}</CardTitle>
+        <CardTitle className="text-xl">{name}</CardTitle>
       </CardHeader>
       <CardContent className="pb-4 flex-grow">
         {description && <CardDescription className="text-gray-600">{description}</CardDescription>}

@@ -8,7 +8,6 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
             <h3 className="text-xl font-bold mb-4 flex items-center">
-              <Heart className="h-5 w-5 mr-2 text-cali-pink-light" />
               <span>Campaña Día de las Madres</span>
             </h3>
             <p className="text-gray-300 mb-6">
@@ -43,12 +42,20 @@ const Footer = () => {
             <h3 className="text-xl font-bold mb-4">Contáctanos</h3>
             <ul className="text-gray-300 space-y-3">
               <li className="flex items-center justify-end">
-                <Phone className="h-5 w-5 mr-3 text-cali-pink-light" />
-                <span>(602) 123-4567</span>
+                <Phone className="h-4 w-4 mr-3 text-cali-pink-light" />
+                <span>Línea nacional: 01 8000 222 195</span>
               </li>
               <li className="flex items-center justify-end">
-                <Mail className="h-5 w-5 mr-3 text-cali-pink-light" />
-                <span>diamadres@cali.gov.co</span>
+                <Phone className="h-4 w-4 mr-3 text-cali-pink-light" />
+                <span>Líneas locales: 195 - +57 6028879020</span>
+              </li>
+              <li className="flex items-center justify-end">
+                <Phone className="h-4 w-4 mr-3 text-cali-pink-light" />
+                <span>Línea gratuita: 01 8000 512 734</span>
+              </li>
+              <li className="flex items-center justify-end">
+                <Mail className="h-4 w-4 mr-3 text-cali-pink-light" />
+                <span>contactenos@cali.gov.co</span>
               </li>
               <li>
                 Centro Administrativo Municipal CAM<br />

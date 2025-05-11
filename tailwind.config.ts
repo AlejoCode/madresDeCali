@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -63,12 +62,17 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-        cali: {
-          'pink-light': '#FFDEE2',
-          'gold': '#D4AF37',
-          'pink-dark': '#FF719A',
-          'beige': '#FDE1D3',
-        }
+				cali: {
+					'pink-light': '#d16ba5',
+					'pink-strong-dark': '#d16ba5',
+					'gold': '#D4AF37',
+					'pink-dark': '#FF719A',
+					'beige': '#FDE1D3',
+					'orange': '#f9d423',
+					'orange-light': '#fb9b4c',
+					'orange-dark': '#fd5a87',
+
+				}
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -92,29 +96,29 @@ export default {
 						height: '0'
 					}
 				},
-        'fade-in': {
-          "0%": {
-            opacity: "0",
-            transform: "translateY(10px)"
-          },
-          "100%": {
-            opacity: "1",
-            transform: "translateY(0)"
-          }
-        },
+				'fade-in': {
+					"0%": {
+						opacity: "0",
+						transform: "translateY(10px)"
+					},
+					"100%": {
+						opacity: "1",
+						transform: "translateY(0)"
+					}
+				},
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
-        'fade-in': 'fade-in 0.7s ease-out',
+				'fade-in': 'fade-in 0.7s ease-out',
 			},
-      fontFamily: {
-        'serif': ['Playfair Display', 'serif'],
-      },
-      backgroundImage: {
-        'gradient-cali': 'linear-gradient(180deg, rgb(254,100,121) 0%, rgb(251,221,186) 100%)',
-        'gradient-gold': 'linear-gradient(to right, #e6b980 0%, #eacda3 100%)',
-      }
+			fontFamily: {
+				'satellite': ['Plywood Satellite', 'sans-serif'],
+			},
+			backgroundImage: {
+				'gradient-cali': 'linear-gradient(90deg, #f9d423 0%, #fb9b4c 50%, #fd5a87 100%)',
+				'gradient-gold': 'linear-gradient(to right, #e6b980 0%, #eacda3 100%)',
+			}
 		}
 	},
 	plugins: [require("tailwindcss-animate")],
