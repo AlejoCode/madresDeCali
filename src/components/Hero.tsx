@@ -8,7 +8,7 @@ const Hero = () => {
       <div className="container mx-auto px-4 z-10 relative">
         <div className="max-w-4xl mx-auto text-center animate-fade-in">
           
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 text-cali-pink-strong-dark">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 text-cali-light-pink">
             Celebremos a mamá <span className="text-white">con amor, respeto y un detalle muy nuestro</span>
           </h1>
           

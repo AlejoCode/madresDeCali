@@ -65,6 +65,7 @@ export default {
 				cali: {
 					'pink-light': '#d16ba5',
 					'pink-strong-dark': '#d16ba5',
+					'light-pink': '#fff9f9',
 					'gold': '#D4AF37',
 					'pink-dark': '#FF719A',
 					'beige': '#FDE1D3',
